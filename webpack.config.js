@@ -1,7 +1,6 @@
 const path = require('path');
 
 module.exports = {
-   watch: true,
   entry: './public/admin/index.js',
   output: {
     path: path.resolve(__dirname, 'public/admin'),
