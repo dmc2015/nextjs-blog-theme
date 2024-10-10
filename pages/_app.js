@@ -1,6 +1,9 @@
-import { useEffect } from 'react'
+import '../styles/globals.css';
+import 'prismjs/themes/prism-tomorrow.css';
+import { useEffect } from 'react';
 
-export default function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
+
   useEffect(() => {
     // Dynamically load the Netlify Identity script
     const script = document.createElement("script");
@@ -22,5 +25,13 @@ export default function MyApp({ Component, pageProps }) {
     };
   }, []);
 
-  return <Component {...pageProps} />;
+
+  return (
+    <>
+      <span className="theme-bejamas" />
+      <Component {...pageProps} />
+    </>
+  );
 }
+
+export default MyApp;
