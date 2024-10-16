@@ -8,7 +8,7 @@ public_folder: "/img"        # Path to media folder
 collections:
   - name: "posts"             # Name of the collection
     label: "Posts"            # Label for the collection
-    folder: "posts"    # Folder where posts are stored
+    folder: "content/posts"    # Folder where posts are stored
     create: true               # Allow creation of new posts
     slug: "{{slug}}"           # Slug format
     fields:                    # Fields for the content type
