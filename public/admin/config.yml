@@ -12,6 +12,7 @@ collections:
     create: true               # Allow creation of new posts
     slug: "{{slug}}"           # Slug format
     extension: "mdx"
+    format: "frontmatter"
     fields:                    # Fields for the content type
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
