@@ -11,6 +11,7 @@ collections:
     folder: "content/posts"    # Folder where posts are stored
     create: true               # Allow creation of new posts
     slug: "{{slug}}"           # Slug format
+    extension: "mdx"
     fields:                    # Fields for the content type
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -18,7 +19,7 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
 
 # Optionally add this custom slug function to ensure files are saved with .mdx extension
-custom:
-  slug: 
-    # Custom slug to append .mdx to new file names
-    function: (slug) => slug + '.mdx'
+# custom:
+#   slug: 
+#     # Custom slug to append .mdx to new file names
+#     function: (slug) => slug + '.mdx'
